@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composants des Fonctionnalités</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #B5654A; /* Brun Terreux */
+            color: #ffffff;
+        }
+
+        thead th {
+            text-align: left;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f3ee; /* Beige Clair */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        tbody td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f3e5d9; /* Beige légèrement plus foncé */
+            transition: background-color 0.3s ease;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        td,
+        th {
+            text-align: left;
+        }
+
+        h2 {
+            color: #B5654A; /* Brun Terreux */
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Composants des Fonctionnalités</h1>
+
+    <h2>Groupe 1 : Gestion des événements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Création d'un événement</td>
+                <td>Formulaires, Boutons (soumettre, annuler), Modales (confirmation de création), Navigation</td>
+            </tr>
+            <tr>
+                <td>Modification d'un événement</td>
+                <td>Formulaires (pré-remplissage des champs), Boutons (enregistrer, réinitialiser), Modales (confirmation de modification)</td>
+            </tr>
+            <tr>
+                <td>Suppression d'un événement</td>
+                <td>Modales (confirmation de suppression), Boutons (confirmer, annuler)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Groupe 2 : Gestion des invités et tickets</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ajout d'un invité</td>
+                <td>Formulaires (nom, email, code d'invitation), Boutons (ajouter, annuler), Listes, Notifications</td>
+            </tr>
+            <tr>
+                <td>Génération de QR codes</td>
+                <td>Listes, Boutons (télécharger, envoyer), Modales (confirmation d'envoi)</td>
+            </tr>
+            <tr>
+                <td>Gestion des tickets</td>
+                <td>Listes, Boutons (afficher, télécharger), QR codes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Groupe 3 : Interaction utilisateur</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Achat de billets</td>
+                <td>Formulaires, Boutons (payer, annuler), Cartes, Notifications</td>
+            </tr>
+            <tr>
+                <td>Gestion de la file d'attente</td>
+                <td>Listes (file en temps réel), Boutons (accès coupe-file), Feedback utilisateur</td>
+            </tr>
+            <tr>
+                <td>Réservation de table</td>
+                <td>Formulaires, Boutons (confirmer, annuler), Cartes (vue interactive des tables)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Groupe 4 : Analyse et communication</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Envoi de notifications push</td>
+                <td>Formulaires, Boutons (envoyer, annuler), Listes (historique des notifications)</td>
+            </tr>
+            <tr>
+                <td>Consultation des statistiques</td>
+                <td>Cartes, Graphiques, Boutons (exporter les données)</td>
+            </tr>
+            <tr>
+                <td>Feedback des clients</td>
+                <td>Formulaires, Listes, Notifications</td>
+            </tr>
+            <tr>
+                <td>Gestion des réseaux sociaux</td>
+                <td>Formulaires, Boutons (publier, prévisualiser), Modales</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Groupe 5 : Gestion du profil et navigation</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Consultation du profil utilisateur</td>
+                <td>Cartes (informations du profil), Boutons (modifier, enregistrer), Formulaires</td>
+            </tr>
+            <tr>
+                <td>Authentification et inscription</td>
+                <td>Formulaires, Boutons (se connecter, s'inscrire), Notifications</td>
+            </tr>
+            <tr>
+                <td>Navigation et recherche d'événements</td>
+                <td>Navigation, Formulaires (barre de recherche), Listes, Cartes</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

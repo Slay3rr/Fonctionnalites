@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composants par Fonctionnalité</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #B5654A; /* Brun Terreux */
+            color: #ffffff;
+        }
+
+        thead th {
+            text-align: left;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f3ee; /* Beige Clair */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        tbody td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f3e5d9; /* Beige légèrement plus foncé */
+            transition: background-color 0.3s ease;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        td,
+        th {
+            text-align: left;
+        }
+
+        h2 {
+            color: #B5654A; /* Brun Terreux */
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Composants par Fonctionnalité</h1>
+
+    <h2>Formulaires</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants Associés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Création d'un événement</td>
+                <td>Champs (titre, description, date, lieu, capacité, options de billetterie), validations.</td>
+            </tr>
+            <tr>
+                <td>Modification d'un événement</td>
+                <td>Champs pré-remplis, validations.</td>
+            </tr>
+            <tr>
+                <td>Ajout d'un invité</td>
+                <td>Champs (nom, email, code d'invitation), validations (email).</td>
+            </tr>
+            <tr>
+                <td>Achat de billets</td>
+                <td>Champs (sélection du billet, paiement).</td>
+            </tr>
+            <tr>
+                <td>Réservation de table</td>
+                <td>Champs (sélection de la table, pré-commande).</td>
+            </tr>
+            <tr>
+                <td>Envoi de notifications push</td>
+                <td>Champs (texte de la notification, destinataires).</td>
+            </tr>
+            <tr>
+                <td>Authentification et inscription</td>
+                <td>Champs (email, mot de passe).</td>
+            </tr>
+            <tr>
+                <td>Signalement d'incident</td>
+                <td>Champs (description, ajout d'image).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Modales</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants Associés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Suppression d'un événement</td>
+                <td>Confirmation de suppression.</td>
+            </tr>
+            <tr>
+                <td>Ajout d'un invité</td>
+                <td>Confirmation d'ajout.</td>
+            </tr>
+            <tr>
+                <td>Génération de QR codes</td>
+                <td>Confirmation d'envoi des QR codes.</td>
+            </tr>
+            <tr>
+                <td>Gestion des réseaux sociaux</td>
+                <td>Confirmation de publication.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Listes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants Associés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Liste des invités</td>
+                <td>Colonnes triables, filtres.</td>
+            </tr>
+            <tr>
+                <td>Génération de QR codes</td>
+                <td>Affichage des QR codes générés.</td>
+            </tr>
+            <tr>
+                <td>Feedback des clients</td>
+                <td>Affichage des avis reçus.</td>
+            </tr>
+            <tr>
+                <td>Gestion des tickets</td>
+                <td>Liste des tickets achetés.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Boutons</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants Associés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Création d'un événement</td>
+                <td>Soumettre, annuler.</td>
+            </tr>
+            <tr>
+                <td>Modification d'un événement</td>
+                <td>Enregistrer, réinitialiser.</td>
+            </tr>
+            <tr>
+                <td>Ajout d'un invité</td>
+                <td>Ajouter, annuler.</td>
+            </tr>
+            <tr>
+                <td>Achat de billets</td>
+                <td>Payer, annuler.</td>
+            </tr>
+            <tr>
+                <td>Réservation de table</td>
+                <td>Confirmer, annuler.</td>
+            </tr>
+            <tr>
+                <td>Envoi de notifications push</td>
+                <td>Envoyer, annuler.</td>
+            </tr>
+            <tr>
+                <td>Gestion de la file d'attente</td>
+                <td>Accès coupe-file.</td>
+            </tr>
+            <tr>
+                <td>Gestion des tickets</td>
+                <td>Afficher, télécharger.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Cartes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fonctionnalité</th>
+                <th>Composants Associés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Achat de billets</td>
+                <td>Affichage des détails du billet.</td>
+            </tr>
+            <tr>
+                <td>Réservation de table</td>
+                <td>Vue interactive des tables disponibles.</td>
+            </tr>
+            <tr>
+                <td>Consultation des statistiques</td>
+                <td>Récapitulatif des ventes, fréquentation.</td>
+            </tr>
+            <tr>
+                <td>Consultation du profil utilisateur</td>
+                <td>Informations du profil.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
